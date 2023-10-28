@@ -35,6 +35,9 @@
             background-color: #ed6447 !important;
             font-weight: 700;
         }
+        &-button:hover{
+            background-color: #e72f0a !important;
+        }
     }
 
     &__content:nth-child(1){
@@ -47,6 +50,9 @@
             border: none;
             color: #ed6447;
             font-weight: 700;
+        }
+        &-button:hover{
+            color: #e72f0a;
         }
     }
 }
