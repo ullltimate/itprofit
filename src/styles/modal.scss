@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 15px;
     overflow: hidden;
+    animation: show 1s;
 
     .modal-content{
         max-width: 300px;
@@ -41,5 +42,14 @@
             font-weight: 700;
             text-decoration: none;
         }
+    }
+
+    &__open{
+        display: flex;
+    }
+
+    @keyframes show {
+        from { opacity: 0}
+        to { opacity: 1}
     }
 }
