@@ -57,3 +57,7 @@ textarea,
 select {
   font: inherit;
 }
+
+button, input[type=submit] {
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
 
-    &__title{
+    &__title, &__help{
         padding: 0 0 10px 0;
         text-align: center;
     }
@@ -33,10 +33,20 @@
         }
         &-button{
             background-color: #ed6447 !important;
+            font-weight: 700;
         }
     }
 
     &__content:nth-child(1){
         margin-right: 5px;
+    }
+
+    &__help{
+        &-button{
+            background: transparent;
+            border: none;
+            color: #ed6447;
+            font-weight: 700;
+        }
     }
 }
