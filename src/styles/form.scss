@@ -1,0 +1,42 @@
+.contacts-form{
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+
+    &__title{
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+
+    &__wrapper{
+        display: flex;
+    }
+
+    &__content{
+        padding: 0 0 10px 0;
+        label{
+            display: none;
+        }
+        input, textarea{
+            width: 100%;
+            min-height: 40px;
+            padding-left: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: #FFFFFF;
+
+            &::placeholder{
+                color: #FFFFFF;
+            }
+        }
+        &-button{
+            background-color: #ed6447 !important;
+        }
+    }
+
+    &__content:nth-child(1){
+        margin-right: 5px;
+    }
+}
