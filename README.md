@@ -8,7 +8,7 @@ Demo server: https://itprofit-server.onrender.com/api/ping
 `git clone https://github.com/ullltimate/itprofit.git`             
 `cd itprofit`             
 `npm install`     
-client: `npm run start`             
-server: `npm run server`         
+client: `npm run start` (изменить ссылку urlApi в `src/healper/helper.js`)                    
+server: `npm run server` 
 
 
