@@ -1,4 +1,5 @@
-export const urlApi = 'http://localhost:9090';
+//export const urlApi = 'http://localhost:9090';
+export const urlApi = 'https://itprofit-server.onrender.com';
 
 export function createWarning(elem, messageWarning){
     if(elem.type != 'submit') elem.style.border = "1px solid red";

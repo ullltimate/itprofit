@@ -31,6 +31,9 @@
                 color: #FFFFFF;
             }
         }
+        textarea{
+            resize: none;
+        }
         &-button{
             background-color: #ed6447 !important;
             font-weight: 700;
