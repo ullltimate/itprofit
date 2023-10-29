@@ -37,6 +37,9 @@ $color-hover: #4794edc9;
                 color: #FFFFFF;
             }
         }
+        input:focus, textarea:focus{
+            outline: 1px solid $color;
+        }
         textarea{
             resize: none;
         }
