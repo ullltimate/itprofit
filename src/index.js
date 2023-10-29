@@ -1,11 +1,12 @@
 import './styles/index.scss'
 import { showModal } from './modules/modal';
-console.log("Hello world!");
+import IMask from 'imask';
 
 showModal();
 
-//const heading = document.createElement('h1')
-//heading.textContent = 'Hello world!'
-//
-//const root = document.querySelector('#root')
-//root.append(heading)
+IMask(
+    document.getElementById('phone'),
+    {
+      mask: '+{375}(00)000-00-00'
+    }
+  )
