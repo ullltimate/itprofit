@@ -1,8 +1,14 @@
+$color: #4794ed7a;
+$color-hover: #4794edc9;
+
 .contacts-form{
+    margin: 0;
     padding: 30px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
+    display: flex;
+    flex-flow: column;
 
     &__title, &__help{
         padding: 0 0 10px 0;
@@ -31,15 +37,18 @@
                 color: #FFFFFF;
             }
         }
+        input:focus, textarea:focus{
+            outline: 1px solid $color;
+        }
         textarea{
             resize: none;
         }
         &-button{
-            background-color: #ed6447 !important;
+            background-color: $color !important;
             font-weight: 700;
         }
         &-button:hover{
-            background-color: #e72f0a !important;
+            background-color: $color-hover !important;
         }
         &-warning{
             font-size: 0.7em;
@@ -55,11 +64,11 @@
         &-button{
             background: transparent;
             border: none;
-            color: #ed6447;
+            color: $color;
             font-weight: 700;
         }
         &-button:hover{
-            color: #e72f0a;
+            color: $color-hover;
         }
     }
 }

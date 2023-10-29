@@ -6,10 +6,8 @@ export function showModal(){
 
     btnOpen.addEventListener('click', (e) => {
         modal.classList.toggle('modal__open');
-        body.style.overflow = 'hidden';
     });
     btnClose.addEventListener('click', () => {
         modal.classList.toggle('modal__open');
-        body.style.overflow = 'visible';
     })
 }
