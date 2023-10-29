@@ -1,12 +1,10 @@
 import './styles/index.scss'
 import { showModal } from './modules/modal';
-import IMask from 'imask';
+import { form } from './modules/form';
 
-showModal();
+function App(){
+    showModal();
+    form();
+}
 
-IMask(
-    document.getElementById('phone'),
-    {
-      mask: '+{375}(00)000-00-00'
-    }
-  )
+App();

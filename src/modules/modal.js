@@ -5,7 +5,6 @@ export function showModal(){
     const body = document.querySelector('body');
 
     btnOpen.addEventListener('click', (e) => {
-        e.preventDefault();
         modal.classList.toggle('modal__open');
         body.style.overflow = 'hidden';
     });
