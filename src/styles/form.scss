@@ -7,6 +7,8 @@ $color-hover: #4794edc9;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
+    display: flex;
+    flex-flow: column;
 
     &__title, &__help{
         padding: 0 0 10px 0;
