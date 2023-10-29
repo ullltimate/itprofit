@@ -2,73 +2,79 @@ $color: #4794ed7a;
 $color-hover: #4794edc9;
 
 .contacts-form{
-    margin: 0;
-    padding: 30px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
+  margin: 0;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-flow: column;
+
+  &__title, &__help{
+    padding: 0 0 10px 0;
+    text-align: center;
+  }
+
+  &__wrapper{
     display: flex;
-    flex-flow: column;
+  }
 
-    &__title, &__help{
-        padding: 0 0 10px 0;
-        text-align: center;
+  &__content{
+    padding: 0 0 10px 0;
+
+    label{
+      display: none;
     }
 
-    &__wrapper{
-        display: flex;
+    input, textarea{
+      width: 100%;
+      min-height: 40px;
+      padding-left: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 5px;
+      color: #FFFFFF;
+
+      &::placeholder{
+        color: #FFFFFF;
+      }
     }
 
-    &__content{
-        padding: 0 0 10px 0;
-        label{
-            display: none;
-        }
-        input, textarea{
-            width: 100%;
-            min-height: 40px;
-            padding-left: 5px;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            border-radius: 5px;
-            color: #FFFFFF;
-
-            &::placeholder{
-                color: #FFFFFF;
-            }
-        }
-        input:focus, textarea:focus{
-            outline: 1px solid $color;
-        }
-        textarea{
-            resize: none;
-        }
-        &-button{
-            background-color: $color !important;
-            font-weight: 700;
-        }
-        &-button:hover{
-            background-color: $color-hover !important;
-        }
-        &-warning{
-            font-size: 0.7em;
-            text-align: center;
-        }
+    input:focus, textarea:focus{
+      outline: 1px solid $color;
     }
 
-    &__content:nth-child(1){
-        margin-right: 5px;
+    textarea{
+      resize: none;
     }
 
-    &__help{
-        &-button{
-            background: transparent;
-            border: none;
-            color: $color;
-            font-weight: 700;
-        }
-        &-button:hover{
-            color: $color-hover;
-        }
+    &-button{
+      background-color: $color !important;
+      font-weight: 700;
     }
+    &-button:hover{
+      background-color: $color-hover !important;
+    }
+    &-warning{
+      font-size: 0.7em;
+      text-align: center;
+    }
+  }
+
+  &__content:nth-child(1){
+    margin-right: 5px;
+  }
+
+  &__help{
+    &-button{
+      background: transparent;
+      border: none;
+      color: $color;
+      font-weight: 700;
+    }
+
+    &-button:hover{
+      color: $color-hover;
+    }
+  }
 }
