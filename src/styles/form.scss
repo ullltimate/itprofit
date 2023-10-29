@@ -1,7 +1,10 @@
+$color: #4794ed7a;
+$color-hover: #4794edc9;
+
 .contacts-form{
     padding: 30px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
 
     &__title, &__help{
@@ -35,11 +38,11 @@
             resize: none;
         }
         &-button{
-            background-color: #ed6447 !important;
+            background-color: $color !important;
             font-weight: 700;
         }
         &-button:hover{
-            background-color: #e72f0a !important;
+            background-color: $color-hover !important;
         }
         &-warning{
             font-size: 0.7em;
@@ -55,11 +58,11 @@
         &-button{
             background: transparent;
             border: none;
-            color: #ed6447;
+            color: $color;
             font-weight: 700;
         }
         &-button:hover{
-            color: #e72f0a;
+            color: $color-hover;
         }
     }
 }
